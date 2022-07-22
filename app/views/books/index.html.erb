@@ -14,38 +14,52 @@
     <tr>
       <td>リーダブルコード</td>
       <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
+      <td><%= link_to 'Destroy', destroy_book_path(book.id), method: :delete, 'data-confirm' => '本当に削除しますか？' %></td>
     </tr>
 
     <tr>
       <td>トラブル知らずのシステム設計</td>
       <td>システム設計の要点を図解で説明してくれます</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
     </tr>
 
     <tr>
       <td>たのしいRuby</td>
       <td>Rubyの入門におすすめです</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
     </tr>
 
     <tr>
       <td>入門Git</td>
       <td>gitについての基本操作から内部構造まで解説してくれます</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
     </tr>
 
     <tr>
-      <td>アルゴリズム図鑑図鑑</td>
+      <td>アルゴリズム図鑑</td>
       <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
     </tr>
 
     <tr>
       <td>達人プログラマー</td>
       <td>プログラマ入門者は必読！</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
     </tr>
 
     <tr>
       <td>データベース実践入門</td>
       <td>効率的なSQL文を教えてくれます</td>
+      <td><%= link_to 'Show', 'book_path(book.id)', class: 'show', method: :get %></td>
+      <td><%= link_to 'Edit', 'book_path(book.id)', class: 'edit', method: :get %></td>
     </tr>
-
   </tbody>
 </table>
 
@@ -62,6 +76,6 @@
         </div>
 
         <div class="actions">
-          <%= f.submit %>
+          <%= f.submit 'Create Book' %>
         </div>
       <% end %>
